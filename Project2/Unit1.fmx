@@ -1,0 +1,72 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 777
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object lblQuestionLabel: TLabel
+    Position.X = 48.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 433.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'lblQuestionLabel'
+    TabOrder = 0
+  end
+  object rdbAnswer1: TRadioButton
+    Position.X = 48.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 593.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Answer 1'
+    OnChange = rdbAnswer1Change
+  end
+  object rdbAnswer2: TRadioButton
+    Position.X = 48.000000000000000000
+    Position.Y = 132.000000000000000000
+    Size.Width = 593.000000000000000000
+    Size.Height = 27.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Answer 2'
+    OnChange = rdbAnswer2Change
+  end
+  object rdbAnswer3: TRadioButton
+    Position.X = 48.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 593.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Answer 3'
+    OnChange = rdbAnswer3Change
+  end
+  object btnConfirm: TButton
+    Position.X = 48.000000000000000000
+    Position.Y = 248.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = '&Confirm'
+    OnClick = btnConfirmClick
+  end
+  object lblPoints: TLabel
+    Position.X = 504.000000000000000000
+    Position.Y = 24.000000000000000000
+    Text = 'Points:'
+    TabOrder = 5
+  end
+  object lblPointsLabel: TLabel
+    Position.X = 649.000000000000000000
+    Position.Y = 24.000000000000000000
+    Text = 'PointsLabel'
+    TabOrder = 6
+  end
+end
