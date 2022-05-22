@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{BDF0C9B6-8A92-4D81-A8C9-7F6B2912CC03}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="TicTacToe.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="TicTacToe">
+        <MSBuild Projects="TicTacToe.cbproj"/>
+    </Target>
+    <Target Name="TicTacToe:Clean">
+        <MSBuild Projects="TicTacToe.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TicTacToe:Make">
+        <MSBuild Projects="TicTacToe.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="TicTacToe"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="TicTacToe:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="TicTacToe:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
