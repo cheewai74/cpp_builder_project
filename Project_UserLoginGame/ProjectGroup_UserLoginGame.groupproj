@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{0E8F7652-9252-4B83-8171-5417735DE5B7}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Project_UserLoginGame.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Project_UserLoginGame">
+        <MSBuild Projects="Project_UserLoginGame.cbproj"/>
+    </Target>
+    <Target Name="Project_UserLoginGame:Clean">
+        <MSBuild Projects="Project_UserLoginGame.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Project_UserLoginGame:Make">
+        <MSBuild Projects="Project_UserLoginGame.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Project_UserLoginGame"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Project_UserLoginGame:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Project_UserLoginGame:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
