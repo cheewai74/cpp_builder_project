@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{4885D209-8B38-4319-9929-88253AD3F676}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="StopWatch_VCL.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="StopWatch_VCL">
+        <MSBuild Projects="StopWatch_VCL.cbproj"/>
+    </Target>
+    <Target Name="StopWatch_VCL:Clean">
+        <MSBuild Projects="StopWatch_VCL.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="StopWatch_VCL:Make">
+        <MSBuild Projects="StopWatch_VCL.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="StopWatch_VCL"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="StopWatch_VCL:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="StopWatch_VCL:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

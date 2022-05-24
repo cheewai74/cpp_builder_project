@@ -1,0 +1,115 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'MainForm'
+  ClientHeight = 237
+  ClientWidth = 382
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  Menu = MainMenu
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object EditBox: TEdit
+    Left = 8
+    Top = 45
+    Width = 153
+    Height = 21
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 0
+    Text = 'EditBox'
+  end
+  object TimerEnabledCheckBox: TCheckBox
+    Left = 32
+    Top = 72
+    Width = 97
+    Height = 17
+    Caption = 'Timer Enabled'
+    ParentShowHint = False
+    ShowHint = True
+    TabOrder = 1
+  end
+  object StartButton: TButton
+    Left = 248
+    Top = 40
+    Width = 75
+    Height = 25
+    Caption = 'StartButton'
+    TabOrder = 2
+    OnClick = StartButtonClick
+  end
+  object StopButton: TButton
+    Left = 248
+    Top = 71
+    Width = 75
+    Height = 25
+    Caption = 'Stop'
+    TabOrder = 3
+    OnClick = StopButtonClick
+  end
+  object ToolBar1: TToolBar
+    Left = 0
+    Top = 0
+    Width = 382
+    Height = 29
+    Caption = 'ToolBar1'
+    TabOrder = 4
+    ExplicitLeft = 120
+    ExplicitTop = 8
+    ExplicitWidth = 150
+    object StartTimerToolButton: TToolButton
+      Left = 0
+      Top = 0
+      Hint = 'Start Timer'
+      Caption = 'Start'
+      ImageIndex = 0
+      ParentShowHint = False
+      ShowHint = True
+      OnClick = StartButtonClick
+    end
+    object ToolButton3: TToolButton
+      Left = 23
+      Top = 0
+      Hint = 'Stop Timer'
+      Caption = 'StopTimerToolButton'
+      ImageIndex = 1
+      ParentShowHint = False
+      ShowHint = True
+      OnClick = StopButtonClick
+    end
+    object ToolButton2: TToolButton
+      Left = 46
+      Top = 0
+      Width = 8
+      Caption = 'ToolButton2'
+      ImageIndex = 1
+      Style = tbsSeparator
+    end
+  end
+  object Timer: TTimer
+    Enabled = False
+    OnTimer = TimerTimer
+    Left = 328
+    Top = 184
+  end
+  object MainMenu: TMainMenu
+    Left = 272
+    Top = 184
+    object TimerMenu: TMenuItem
+      Caption = 'Timer'
+      object StartTimerMenuItem: TMenuItem
+        Caption = 'Start'
+        OnClick = StartButtonClick
+      end
+      object StopTimerMenuItem: TMenuItem
+        Caption = 'Stop'
+        OnClick = StopButtonClick
+      end
+    end
+  end
+end
