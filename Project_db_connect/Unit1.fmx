@@ -1,0 +1,69 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 743
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object StringGrid1: TStringGrid
+    CanFocus = True
+    ClipChildren = True
+    Position.X = 64.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 505.000000000000000000
+    Size.Height = 209.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    RowCount = 3
+    Viewport.Width = 501.000000000000000000
+    Viewport.Height = 184.000000000000000000
+  end
+  object BindNavigator1: TBindNavigator
+    Position.X = 64.000000000000000000
+    Position.Y = 328.000000000000000000
+    Size.Width = 505.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    DataSource = BindSourceDB1
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
+  end
+  object EmployeeConnection: TFDConnection
+    Params.Strings = (
+      'ConnectionDef=EMPLOYEE')
+    Connected = True
+    LoginPrompt = False
+    Left = 110
+    Top = 433
+  end
+  object StudentsTable: TFDQuery
+    Active = True
+    Connection = EmployeeConnection
+    SQL.Strings = (
+      'SELECT * FROM STUDENTS')
+    Left = 35
+    Top = 431
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = StudentsTable
+    ScopeMappings = <>
+    Left = 304
+    Top = 224
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid1
+      Columns = <>
+    end
+  end
+end
