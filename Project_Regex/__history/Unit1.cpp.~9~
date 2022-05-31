@@ -1,0 +1,42 @@
+//---------------------------------------------------------------------------
+
+#include <fmx.h>
+#include <string>
+#include <regex>
+#pragma hdrstop
+
+#include "Unit1.h"
+//---------------------------------------------------------------------------
+#pragma package(smart_init)
+#pragma resource "*.fmx"
+TForm1 *Form1;
+//---------------------------------------------------------------------------
+__fastcall TForm1::TForm1(TComponent* Owner)
+	: TForm(Owner)
+{
+}
+//---------------------------------------------------------------------------
+void __fastcall TForm1::validateButtonClick(TObject *Sender)
+{
+//	std::string regexPattern="\\w+\\.\\w+\\@\\w+\\.\\w+";
+//	std::regex regexRule(regexPattern);
+//
+//	AnsiString emailText = userInput->Text;
+//	std::string emailString = emailText.c_str();
+//
+//	bool isValid = regex_match(emailString,regexRule);
+//
+//	if(isValid)
+//		isValidLabel->Text="Email is valid";
+//	else
+//		isValidLabel->Text="Email is Not valid";
+
+
+ std::string lowercase = "?=.*[a-z]";
+ std::string uppercase = "?=.*[A-Z]";
+ std::string numbers = "?=.*[0-9]";
+ std::string specialCharacters = "?=.*[$_@]";
+ std::string minCharacters"?=.(6,)";
+
+}
+//---------------------------------------------------------------------------

@@ -1,0 +1,36 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 249
+  ClientWidth = 407
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object userInput: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    Position.X = 104.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object isValidLabel: TLabel
+    Position.X = 104.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'isValidLabel'
+    TabOrder = 1
+  end
+  object validateButton: TButton
+    Position.X = 104.000000000000000000
+    Position.Y = 176.000000000000000000
+    TabOrder = 2
+    Text = 'validateButton'
+    OnClick = validateButtonClick
+  end
+end

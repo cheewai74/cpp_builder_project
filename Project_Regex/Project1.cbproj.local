@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2022/05/31 16:38:40.055,=C:\Users\moses\OneDrive\Documents\Embarcadero\Studio\Projects\cpp_builder_project\cpp_builder_project\Unit1.cpp</Transaction>
+    <Transaction>2022/05/31 16:38:44.281,=C:\Users\moses\OneDrive\Documents\Embarcadero\Studio\Projects\cpp_builder_project\cpp_builder_project\Project1PCH1.h</Transaction>
+    <Transaction>2022/05/31 16:39:54.931,C:\Users\moses\OneDrive\Documents\Embarcadero\Studio\Projects\cpp_builder_project\cpp_builder_project\Project_Regex\Unit1.fmx=C:\Users\moses\OneDrive\Documents\Embarcadero\Studio\Projects\cpp_builder_project\cpp_builder_project\Unit1.fmx</Transaction>
+    <Transaction>2022/05/31 16:39:54.931,C:\Users\moses\OneDrive\Documents\Embarcadero\Studio\Projects\cpp_builder_project\cpp_builder_project\Project_Regex\Unit1.cpp=C:\Users\moses\OneDrive\Documents\Embarcadero\Studio\Projects\cpp_builder_project\cpp_builder_project\Unit1.cpp</Transaction>
+    <Transaction>2022/05/31 16:39:54.931,C:\Users\moses\OneDrive\Documents\Embarcadero\Studio\Projects\cpp_builder_project\cpp_builder_project\Project_Regex\Unit1.h=C:\Users\moses\OneDrive\Documents\Embarcadero\Studio\Projects\cpp_builder_project\cpp_builder_project\Unit1.h</Transaction>
+    <Transaction>2022/05/31 19:41:48.479,C:\Users\moses\OneDrive\Documents\Embarcadero\Studio\Projects\cpp_builder_project\cpp_builder_project\Project_Regex\Project1PCH1.h=C:\Users\moses\OneDrive\Documents\Embarcadero\Studio\Projects\cpp_builder_project\cpp_builder_project\Project1PCH1.h</Transaction>
+    <Transaction>2022/05/31 19:41:51.784,C:\Users\moses\OneDrive\Documents\Embarcadero\Studio\Projects\cpp_builder_project\cpp_builder_project\Project_Regex\Project1.cbproj=C:\Users\moses\OneDrive\Documents\Embarcadero\Studio\Projects\cpp_builder_project\cpp_builder_project\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>
